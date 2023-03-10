@@ -10,7 +10,7 @@ import YourMini from "./YourMini";
 
 const ScaleTable = (props) => {
     
-     const scale=props.scaleData.scale;
+    // const scale=props.scaleData.scale;
 
     const convertToMillimeters = (feet, inches) => {
         return ((feet * 12 * 25.4) + (inches * 25.4));
@@ -42,7 +42,7 @@ const ScaleTable = (props) => {
 //<YourMini feet={props.scaleData.feet} inches={props.scaleData.inches}/>
     return ( <>
         
-        
+        <YourMini feet={props.scaleData.feet} inches={props.scaleData.inches} calcScale={calcScale} scale={props.scaleData.scale}/>
         
     
     </> );
