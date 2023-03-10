@@ -1,1 +1,21 @@
-/** style feet and inches centered above scale centered which is above calculate to the bottom right **/
+/* style form feet and inches on the same row centerted */
+#height-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* style scale centered*/
+#scale {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* style calculate centered below scale*/
+#calculate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

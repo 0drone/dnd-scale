@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "./ScaleForm.css"
 
 
 
@@ -39,20 +39,24 @@ const ScaleForm = (props) => {
   
 
     return ( 
-        <form onSubmit={handleSubmit}>
-        <label>
-          Feet:
-          <input type="number" value={feet} onChange={handleFeetChange} defaultValue={6}/>
-        </label>
-        <label>
-          Inches:
-          <input type="number" value={inches} onChange={handleInchesChange} defaultValue={0}/>
-        </label>
-        <label>
+        <form onSubmit={handleSubmit} id="scale-form">
+        <div id='height-input'>
+          <label id='feet'>
+            Feet:
+            <input type="number" value={feet} onChange={handleFeetChange} defaultValue={6} placeholder={"6"} />
+          </label>
+
+          <label id='inches'>
+            Inches:
+            <input type="number" value={inches} onChange={handleInchesChange} defaultValue={0} />
+          </label>
+        </div>
+        <label id='scale'>
           Scale:
-          <input type="number" value={scale} onChange={handleScaleChange} defaultValue={60}/>
+          <input type="number" value={scale} onChange={handleScaleChange} defaultValue={60} />
         </label>
-        <button type="submit">Calculate</button>
+        
+        <button type="submit" id="calculate">Calculate</button>
       </form>
      );
 }

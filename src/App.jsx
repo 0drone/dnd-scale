@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ScaleTable from './display-table/ScaleTable.jsx';
+import ScaleDisplay from './display-table/ScaleDisplay.jsx';
 import ScaleForm from './scale-form/ScaleForm';
 //import { calculateMilimeters } from './helpers';
 
@@ -14,7 +14,7 @@ const App = () => {
     <>
       
       <ScaleForm setScaleData={setScaleData}/>
-      <ScaleTable scaleData={scaleData}/>
+      <ScaleDisplay scaleData={scaleData}/>
     </>
   );
 };
